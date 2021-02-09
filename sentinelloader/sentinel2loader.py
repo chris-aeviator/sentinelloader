@@ -303,9 +303,10 @@ class Sentinel2Loader:
                         visibleLandRatio = np.sum(ldata)/(s[0]*s[1])
 
                         if visibleLandRatio<minVisibleLand:
+                            print("Land Ratio not sufficient", visibleLandRatio)
                             raise Exception("Too few land shown in image. visible ratio=%s" % visibleLandRatio)
                         else:
-                            print("Minimuim visible land detected")
+                            print("Minimum visible land detected", visibleLandRatio)
                             logger.info('Minimum visible land detected. visible ratio=%s' % visibleLandRatio)
 
                     except Exception as exp:
