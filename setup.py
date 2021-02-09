@@ -2,8 +2,8 @@ from setuptools import setup, find_packages
 
 setup(
     name='sentinelloader',
-    version='1.1.1-01',
-    url='https://github.com/chris-aeviator/sentinelloader/edit/master/setup.py',
+    version='1.1.2',
+    url='https://github.com/chris-aeviator/sentinelloader.git',
     author='Flávio Stutz',
     license='MIT',
     author_email= 'flaviostutz@gmail.com',
