@@ -305,6 +305,7 @@ class Sentinel2Loader:
                         if visibleLandRatio<minVisibleLand:
                             raise Exception("Too few land shown in image. visible ratio=%s" % visibleLandRatio)
                         else:
+                            print("Minimuim visible land detected")
                             logger.info('Minimum visible land detected. visible ratio=%s' % visibleLandRatio)
 
                     except Exception as exp:
