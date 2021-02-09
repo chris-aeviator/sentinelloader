@@ -305,7 +305,7 @@ class Sentinel2Loader:
                         if visibleLandRatio<minVisibleLand:
                             raise Exception("Too few land shown in image. visible ratio=%s" % visibleLandRatio)
                         else:
-                            logger.debug('Minimum visible land detected. visible ratio=%s' % visibleLandRatio)
+                            logger.info('Minimum visible land detected. visible ratio=%s' % visibleLandRatio)
 
                     except Exception as exp:
                         logger.warning('Could not filter minimum visible land using SCL band. dateRef=%s err=%s' % (dateRefStr, exp))
